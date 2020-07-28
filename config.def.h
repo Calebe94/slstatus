@@ -63,13 +63,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function, format, argument */
-	//{ disk_free, " %.5s GiB | ", "/" },
 	{ wifi_perc, "[ %3s%%  ", "wlp3s0" },
 	{ wifi_essid, "%s ]", "wlp3s0" },
-	//{ ipv4, "%s | ", "wlp3s0" },
-	{ run_command, "[ ♪ %s ]", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-  { run_command, "[  %s%% ]", "~/.scripts/keyboard_backlight"},
-  { run_command, "[  %s%% ]", "~/.scripts/screen_backlight"},
 	{ battery_perc, "[ ⚡ %s%%", "BAT0" },
 	{ battery_state, " %s ]", "BAT0" },
 	{ datetime, "%s", "[ (%a) %F %T ]" },
